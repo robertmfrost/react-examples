@@ -1,0 +1,10 @@
+:root {
+  --main-bg-color: #121423;
+  --card-bg-color: white;
+  --button-bg: linear-gradient(185deg, #3cf, #039);
+  --border-radius: 0.25rem;
+  --input-bg: #f7f7f7;
+  --font-smaller: 0.75rem;
+  --color-error-background: #ffeeee;
+  --color-error-border: #cc3333;
+}
