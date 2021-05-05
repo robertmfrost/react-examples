@@ -2,69 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To preview the app locally, open a command-line tool and navigate to the place you want to download the app's code into. Then, type in the following commands:
+1. `git clone https://github.com/robertmfrost/react-examples.git` to download the app.
+2. `npm install` to download and install dependencies which the app needs in order to work.
+3. `npm start` to run the app in your browser through `localhost:3000`.
 
-In the project directory, you can run:
+## Project #1: Password Entry Library
 
-### `yarn start`
+This project attempts to explore a password entry library. Currently it is the only project on this app so it's overloaded with other features that should otherwise be provided by separate projects (such as a style guide or component library). The "extra" stuff is just to try and provide a nice interface to preview the experience through.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The first edition of the project aims to accomplish the following:
+1. Has two input fields to validate the entry from the user (both inputs must match)
+2. Password has a min length of 6 characters
+3. Password has at least 1 uppercase character
+4. Password has at least 1 lowercase character
+5. Password has at least 1 number
+6. Password has at least 1 special character (!@#$%^&*()_-+={[}]|:;"'<,>.)
+7. Has a submit button that will trigger validation and present success or why the password entry failed
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Scoped CSS and other neat features were considered, but omitted at this time due to the small size of the app/project as a whole. Unit testing was also implemented to try and help ensure that various scenarios are working as intended. Other files likely require cleanup (such as removing the default `logo.svg` react logo image), but those can wait until a later iteration.
